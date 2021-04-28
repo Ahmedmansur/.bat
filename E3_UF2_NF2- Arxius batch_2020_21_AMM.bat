@@ -51,7 +51,7 @@ goto menu
 echo "crear backup carpeta"
 cd %Homepath%/Desktop 
 md M2-SMO-Backup-%date:~10,4%%date:~7,2%%date:~4,2%
-robocopy %Homepath%/Desktop/M2-Sistemes_operatius %Homepath%/Desktop/M2-SMO-Backup-%date:~10,4%%date:~7,2%%date:~4,2% /E 
+robocopy %Homepath%/Desktop/M2-Sistemes_operatius %Homepath%/Desktop/M2-SMO-Backup-%date:~10,4%%date:~7,2%%date:~4,2% /E >>log.txt
 echo.
 pause
 echo.
